@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/country_name"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="match_parent"
+                android:ellipsize="start"
+                android:gravity="center|left"
+                android:textColor="@android:color/background_dark"
+                android:singleLine="true"
+                android:hint="India"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"/>
+
+            <CheckBox
+                android:id="@+id/country_selected"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:button="@drawable/cheakbox_selector"
+                android:layout_weight="0.1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.40dp"></TextView>
+
+
+
+
+</LinearLayout>
